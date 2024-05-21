@@ -1,2 +1,14 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<main>
+    <div class="whole-page">
+        <h1 class="about">About Me</h1>
+        <div class="description">
+            <p>
+            Highly motivated recent graduate with a Bachelor of Computer Science from Augusta University and an Associate's in Science from Fayetteville Technical Community College.
+             Eager to kickstart a career in technology, I bring a versatile skill set and a passion for learning to any project or team.
+              Proficient in a wide range of programming languages and technologies, including Python, Ruby-on-Rails, Svelte/SvelteKit, HTML, CSS, JavaScript, C#, Java, C++, and SQL.
+               Demonstrated expertise in computer systems design, highlighted by projects such as creating a model using Scikit Learn's Support Vector Classifier to detect broken bones in medical X-rays with 97% accuracy, and building a miniature model of a building with Arduino microprocessors controlling various components.
+                Committed to excellence and ready to begin my career in the field of computer science and technology.
+            </p>
+        </div>
+    </div>
+</main>

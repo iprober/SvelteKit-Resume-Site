@@ -1,0 +1,23 @@
+<main>
+  <h1>Education</h1>
+  <ul class="edu-list">
+    <li class="edu-item">
+      <a href="https://www.augusta.edu/" target="_blank">
+        <img src="/AU.png" alt="Augusta University">
+      </a>
+      <p><i>May 2024</i> Bachelor of Computer Science, Augusta University, Augusta Georgia</p>
+    </li>
+    <li class="edu-item">
+      <a href="https://www.faytechcc.edu/" target="_blank">
+        <img src="/FTCC.png" alt="Fayetteville Technical Community College">
+      </a>
+      <p><i>July 2021</i> Associates in Science, Fayetteville Technical Community College, Fayetteville NC</p>
+    </li>
+    <li class="edu-item">
+      <a href="https://www.ccs.k12.nc.us/cfhs" target="_blank">
+        <img src="/CFHS.png" alt="Cape Fear High School">
+      </a>
+      <p><i>June 2020</i> High School Diploma, Cape Fear High School, Fayetteville NC</p>
+    </li>
+  </ul>
+</main>

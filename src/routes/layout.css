@@ -1,3 +1,236 @@
-h1 {
-    color: blue;
+:root {
+    font-size: 16px;
+    --text-primary: #ffffff;
+    --text-secondary: #b6b6b6;
+    --bg-primary: #232323;
+    --bg-secondary: #2e2e2e;
+    
+    --nav-bg: #1f6b9a;
+    --nav-secondary-bg: #1a2837;
+
+    --icon-transition-speed: 1000ms;
+    --icon-default-color: #b6b6b6;
+    --icon-secondary-color: #3498db;
+    --icon-hover-color: #ffffff;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+body {
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    /* rem value is relative to font size (5 * 16 in this case) */
+    margin: 5rem;
+    padding: 1rem;
+    flex: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: auto;
+    padding-top: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .left-header h1 {
+    margin-right: auto;
+    margin-left: 10rem;
+  }
+  
+  .right-header h1 {
+    margin-left: auto;
+    margin-right: 5rem;
+  }
+
+@media screen and (max-width: 850px) {
+  .right-header {
+    display: none;
+  }
+  
+  .left-header h1 {
+    margin-right: auto;
+  }
+}
+
+.content {
+    font-size: 16px;
+    --text-primary: #ffffff;
+    --text-secondary: #b6b6b6;
+    --bg-primary: #232323;
+    --bg-secondary: #2e2e2e;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+
+    align-items: center;
+    flex: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 5rem;
+    padding-left: 10rem;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+@media screen and (max-width: 1000px) {
+    .content {
+        padding-right: 0rem;
+        padding-left: 2rem;
+    }
+}
+
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+
+footer {
+    margin-left: 5rem;
+    margin-right: 0;
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 1rem 0.5rem;
+    }
+
+    footer h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    footer h3 {
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+}
+
+
+.navbar {
+    top: 0;
+    width: 5rem;
+    background-color: var(--nav-bg);
+    transition: width 200ms ease;
+    position: fixed;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.nav-link svg {
+    min-width: 2rem;
+    min-height: 2rem;
+    margin: 0 1.5rem;
+    max-width: 2rem;
+    max-height: 2rem;
+    fill: var(--icon-default-color);
+}
+
+.nav-link:hover .icon {
+    fill: var(--icon-hover-color);
+    transition: fill var(--icon-transition-speed) ease;
+}
+
+.nav-link:hover svg {
+    max-width: 5rem;
+    max-height: 5rem;
+}
+
+.navbar:hover {
+    width: 16rem;
+}
+
+.navbar:hover .link-text {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--nav-secondary-bg);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+
+.logo svg {
+    transform: rotate(0deg);
+    fill: var(--icon-secondary-color);
+    transition: fill var(--icon-transition-speed), transform var(--icon-transition-speed);
+    
+}
+
+
+.navbar:hover .logo svg {
+    transform: rotate(-180deg);
+    fill: var(--icon-hover-color);
 }

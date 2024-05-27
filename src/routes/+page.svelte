@@ -1,3 +1,11 @@
+<script>
+    // No specific script needed for basic layout
+</script>
+  
+<style>
+    @import 'index.css';
+</style>
+
 <main>
     <div class="whole-page">
         <h1 class="about">About Me</h1>

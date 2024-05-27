@@ -1,3 +1,11 @@
+<script>
+    // No specific script needed for basic layout
+</script>
+
+<style>
+    @import 'work.css';
+</style>
+
 <main>
     <h1>Work Experience</h1>
     <ui class="work-exp-list">

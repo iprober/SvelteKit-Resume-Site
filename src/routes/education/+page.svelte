@@ -1,3 +1,11 @@
+<script>
+  // No specific script needed for basic layout
+</script>
+
+<style>
+    @import 'education.css';
+</style>
+
 <main>
   <h1>Education</h1>
   <ul class="edu-list">

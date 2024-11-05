@@ -38,3 +38,9 @@ You can preview the production build with `npm run preview`.
 To run on github: 'npm run dev'
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+## Running in GitHub Codespaces:
+
+npm install
+
+npm run dev

@@ -54,11 +54,11 @@
         </li>
 
         <li class="skill-item">
-            <p>Ruby on Rails - This website.</p>
+            <p>Ruby on Rails - Another website, identical to this one.</p>
         </li>
 
         <li class="skill-item">
-            <p>Svelte/SvelteKit - For a class project, I developed a resume website hosted on GitHub, similar to this one.            </p>
+            <p>Svelte/SvelteKit - This website.            </p>
         </li>
 
         <li class="skill-item">
